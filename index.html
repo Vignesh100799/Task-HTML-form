@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">  
+</head>
+<body>
+    <div class="container" id="form-container">
+                 <h1 id="title" class="text-center">HTML Form Submission by using DOM</h1>
+                 <p id="description" class="text-black-50" style="text-align: center;">Hi, This is DOM manipulation with form. Here HTML, CSS and javascript languages are used. The form get designed by Vignesh.B </p>
+        <form id="form">
+                        <div class="form-group">
+                            <label for="first-name" class="form-label">First name : </label>
+                            <input type="text" id="first-name" name="first-name" class="form-control"
+                            placeholder="ex: Mike"  required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last-name" class="form-label">Last name : </label>
+                            <input type="text" id="last-name" name="last-name" class="form-control"
+                            placeholder="ex: Tyson"  required>
+                        </div>
+
+                        <div class="form-group">
+                        <label for="address" class="form-label">Address :</label>
+                        <textarea name="address" id="address" class="form-control" placeholder="ex-1/2, 3rd street, 4th lane" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pincode">Pincode :</label>
+                            <input name="pincode" class="form-control" maxlength="6" type="text"
+                            placeholder="ex-123456" id="pincode" required>
+                        </div>
+
+                        <div class="form-group" id="gender">
+                        <p>Gender : </p>
+                        <input class="input-radio" type="radio" name="gender" value="Male">Male
+                        <input class="input-radio" type="radio" name="gender" value="Female">Female
+                        <input class="input-radio" type="radio" name="gender" value="Others">Others
+                        </div> 
+                        <p style="color: red;" id="gender-error"></p>
+                        
+<div class="form-group" id="food-name"><p>Choice of food :<br><span class="clue">(Must choose at least 2 out of 5 options)</span></p>
+    <label><input  class="input-box"  name="cuisine" value="Indian" type="checkbox" />Indian</label>
+    <label><input  class="input-box"  name="cuisine" value="Italian" type="checkbox" />Italian</label>
+    <label><input  class="input-box"  name="cuisine" value="Soul food" type="checkbox" />Soul food</label>
+    <label><input  class="input-box"  name="cuisine" value="Thai" type="checkbox" />Thai</label>
+    <label><input  class="input-box"  name="cuisine" value="French" type="checkbox" />French</label>
+        
+</div><p style="color: red;" id="cuisine-error"></p>
+<div class="form-group"  id="state">
+    State : <br>
+    <input class="form-control" class="i-box"  type="text" placeholder="ex-NY" id="state-box" required>
+</div>
+<div class="form-group" id="country">
+    Country :
+    <input class="form-control" class="i-box"  type="text" placeholder="ex-USA" id="country-box" required><br>
+    <button class="form-control btn btn-primary" id="submit" onclick="save()">Submit</button>
+</div></form><br>
+
+
+</div>  
+
+<div class="container">
+    <h1 id="title" class="text-center">Submitted Data Here</h1>
+   <table id="table" class="table">
+    <thead>
+        <tr class="row-container">
+            <th class="col-sm-2">First Name</th>
+            <th class="col-sm-2">Last Name</th>
+            <th class="col-sm-2">Address</th>
+            <th class="col-sm-2">Pincode</th>
+            <th class="col-sm-2">Gender</th>
+            <th class="col-sm-2">Cuisine</th>
+            <th class="col-sm-2">State</th>
+            <th class="col-sm-2">Country</th>
+          </tr>
+    </thead>
+    <div>
+    <tbody id="tbody"></tbody>
+</div>
+   </table>
+</div>
+<script src="script.js"></script>
+<script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
