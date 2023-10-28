@@ -61,9 +61,8 @@ document.getElementById('first-name').value = '';
 document.getElementById('last-name').value = '';
 document.getElementById('address').value= '';
 document.getElementById('pincode').value= '';
-
-document.getElementById('state').value = '';
-document.getElementById('country').value = '';
+document.getElementById('state-box').value = '';
+document.getElementById('country-box').value = '';
 var genders = document.getElementsByName('gender');
    for (i = 0; i < genders.length; i++) {
      genders[i].checked = false
